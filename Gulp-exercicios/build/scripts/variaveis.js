@@ -1,1 +1,1 @@
-function multiplicar(l,i){return l*i}console.log(multiplicar(10,10));
+function somar(o,n){return o+n}console.log(somar(10,10));

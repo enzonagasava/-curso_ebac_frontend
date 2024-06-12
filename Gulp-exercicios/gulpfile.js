@@ -3,15 +3,14 @@ const sass = require("gulp-sass")(require("sass"))
 const sourceMaps = require("gulp-sourcemaps");
 const uglify = require("gulp-uglify")
 const imagemin = require("gulp-imagemin")
-const sharp  = require("gulp-sharp-responsive")
 
-function minifyImage(cb) {
-    gulp.src('./source/images/*')
-        .pipe(imagemin({ verbose: true }))
+function minifyImage() {
+    return gulp.src('./source/images/*')
+        .pipe(imagemin())
         .pipe(gulp.dest('./build/images'));  
-    cb();
 }
     exports.imagemin = minifyImage;
+
 function compilaSass(){
     return gulp.src("./source/styles/*.scss")
     .pipe(sourceMaps.init())

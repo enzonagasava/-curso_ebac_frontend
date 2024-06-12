@@ -1,7 +1,6 @@
 {
   "name": "gulp-exercicios",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
@@ -10,12 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-sharp-responsive": "^0.4.1",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.77.4"
-  }
+  },
+  "description": ""
 }

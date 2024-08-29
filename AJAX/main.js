@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const avatar = document.getElementById('avatar');
         const linkProfile = document.getElementById('linkProfile')
 
-    fetch('https://api.github.com/users/enzonagasava')
+    fetch('https://api.github.com/users/enzonagasav')
     .then(function(resposta){
         return resposta.json()
     })
@@ -19,5 +19,8 @@ document.addEventListener('DOMContentLoaded', function(){
         username.innerText = json.name;
         avatar.src = json.avatar_url;
         linkProfile.href = json.html_url;
+    })
+    .catch(function(error){
+        console.log('ocorreu um erro')
     })
 })

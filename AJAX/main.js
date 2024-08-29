@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const avatar = document.getElementById('avatar');
         const linkProfile = document.getElementById('linkProfile')
 
-    fetch('https://api.github.com/users/enzonagasav')
+    fetch('https://api.github.com/users/enzonagasava')
     .then(function(resposta){
         return resposta.json()
     })

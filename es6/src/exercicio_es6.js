@@ -9,9 +9,7 @@ const alunos = [
 function alunosAprovados(alunos) {
     return alunos.filter(aluno => aluno.nota >= 6);
 }
-
-const aprovados = alunosAprovados(alunos);
-console.log(aprovados);
+console.log(alunosAprovados(alunos));
 
 
 
